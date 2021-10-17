@@ -1,5 +1,5 @@
 {
-  "name": "message-app",
+  "name": "mean-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,8 +9,8 @@
     "heroku-postbuild": "ng build --prod"
   },
   "engines": {
-    "node": "6.11.0",
-    "npm": "3.10.10"
+    "node": "14.16.1",
+    "npm": "6.14.11"
   },
   "private": true,
   "dependencies": {
