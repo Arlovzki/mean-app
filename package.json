@@ -3,18 +3,24 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "start:server": "nodemon ./backend/server.js"
+    "heroku-postbuild": "ng build --prod"
+  },
+  "engines": {
+    "node": "6.11.0",
+    "npm": "3.10.10"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.0.2",
     "@angular/cdk": "^12.2.8",
+    "@angular/cli": "~12.0.2",
     "@angular/common": "~12.0.2",
     "@angular/compiler": "~12.0.2",
+    "@angular/compiler-cli": "~12.0.2",
     "@angular/core": "~12.0.2",
     "@angular/forms": "~12.0.2",
     "@angular/material": "^12.2.8",
@@ -29,8 +35,10 @@
     "mongoose-unique-validator": "^3.0.0",
     "multer": "^1.4.3",
     "nodemon": "^2.0.13",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
+    "typescript": "~4.2.3",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -39,6 +47,7 @@
     "@angular/compiler-cli": "~12.0.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
